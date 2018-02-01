@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="rmuti.ds.AppTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="rmuti.ds.AppTest" time="0.005" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9+181"/>
@@ -26,14 +26,16 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/chaluemwutnoyunsan/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5784064626379345758.tmp"/>
+    <property name="classworlds.conf" value="/Users/chaluemwutnoyunsan/apache-maven-3.5.0/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/chaluemwutnoyunsan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/Users/chaluemwutnoyunsan/apache-maven-3.5.0/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="53.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.13.1"/>
+    <property name="library.jansi.path" value="/Users/chaluemwutnoyunsan/apache-maven-3.5.0/lib/jansi-native/osx64"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/chaluemwutnoyunsan"/>
     <property name="user.timezone" value="Asia/Bangkok"/>
@@ -41,10 +43,10 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="9"/>
     <property name="user.name" value="chaluemwutnoyunsan"/>
-    <property name="java.class.path" value="/Users/chaluemwutnoyunsan/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.class.path" value="/Users/chaluemwutnoyunsan/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="9"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -52,7 +54,7 @@
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="9"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Users/chaluemwutnoyunsan/eclipse-workspace/ds/EMBEDDED"/>
+    <property name="maven.home" value="/Users/chaluemwutnoyunsan/apache-maven-3.5.0"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
@@ -61,5 +63,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="rmuti.ds.AppTest" name="testApp" time="0.004"/>
+  <testcase classname="rmuti.ds.AppTest" name="testApp" time="0.005"/>
 </testsuite>
