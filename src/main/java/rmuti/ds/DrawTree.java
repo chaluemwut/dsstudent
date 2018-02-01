@@ -17,40 +17,40 @@ import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 public class DrawTree {
 	Graph<Node, String> graph = new DelegateForest(new DirectedSparseGraph());
 	int counter = 0;
-	
+
 	private Node root;
-	
+
 	public DrawTree(Node root) {
 		this.root = root;
 	}
-	
+
 	private void draw(Node node) {
-		if(node == null) {
+		if (node == null) {
 			return;
 		}
-		
-		if(node.left != null) {			
+
+		if (node.left != null) {
 			draw(node.left);
 			draw(node.right);
-			graph.addEdge("e"+(counter++), node, node.left);
+			graph.addEdge("e" + (counter++), node, node.left);
 		}
-		if(node.right != null) {			
-			draw(node.left);				
+		if (node.right != null) {
+			draw(node.left);
 			draw(node.right);
-			graph.addEdge("e"+(counter++), node, node.right);
+			graph.addEdge("e" + (counter++), node, node.right);
 		}
-		
+
 	}
-	
+
 	public void drawTree() {
 		draw(root);
-		
-		Layout layout = new TreeLayout<>((Forest)graph);
-		
+
+		Layout layout = new TreeLayout<>((Forest) graph);
+
 		BasicVisualizationServer vs = new BasicVisualizationServer(layout, new Dimension(200, 200));
 		vs.getRenderContext().setVertexLabelTransformer(new ToStringLabeller());
 		vs.getRenderContext().setEdgeShapeTransformer(new EdgeShape.Line<>());
-		
+
 		JFrame frame = new JFrame();
 		frame.getContentPane().add(vs);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

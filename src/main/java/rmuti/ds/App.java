@@ -9,7 +9,7 @@ import rmuti.ds.Node;
  */
 public class App {
 	
-    public static void main( String[] args ){
+    public static void main( String[] args ) {
 		Node d = new Node("d", null, null);
 		Node e = new Node("e", null, null);
 		
