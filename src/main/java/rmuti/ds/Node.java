@@ -9,6 +9,10 @@ public class Node {
 		left = l;
 		right = r;
 	}
+	
+	public Object getValue() {
+		return element;
+	}
 
 	@Override
 	public String toString() {
