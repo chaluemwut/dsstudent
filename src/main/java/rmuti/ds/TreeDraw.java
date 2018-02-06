@@ -16,6 +16,7 @@ import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 public class TreeDraw {
 	private int counter = 0;
 	private DelegateTree<Node, String> tree = new DelegateTree<>(new DirectedOrderedSparseMultigraph());
+	
 	private Node root = null;
 
 	public TreeDraw(Node root) {
@@ -42,12 +43,12 @@ public class TreeDraw {
 		draw(node.right);
 	}
 	
-	public void draw() {
+	public void binaryTreeDraw() {
 		draw(root);
 		
 		Layout layout = new TreeLayout<>((Forest) tree);
 
-		BasicVisualizationServer vs = new BasicVisualizationServer(layout, new Dimension(200, 200));
+		BasicVisualizationServer vs = new BasicVisualizationServer(layout, new Dimension(500, 500));
 		vs.getRenderContext().setVertexLabelTransformer(new ToStringLabeller());
 		vs.getRenderContext().setEdgeShapeTransformer(new EdgeShape.Line<>());
 
