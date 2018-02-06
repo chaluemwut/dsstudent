@@ -19,6 +19,6 @@ public class App {
 		Node root = new Node("a", b, c);
 				
     		TreeDraw drawTree = new TreeDraw(root);
-    		drawTree.draw();
+    		drawTree.binaryTreeDraw();
     }
 }
