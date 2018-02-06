@@ -15,6 +15,9 @@ import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 
 public class TreeDraw {
 	private int counter = 0;
+	private int width = 500;
+	private int height = 500;
+	
 	private DelegateTree<Node, String> tree = new DelegateTree<>(new DirectedOrderedSparseMultigraph());
 	
 	private Node root = null;
@@ -43,6 +46,22 @@ public class TreeDraw {
 		draw(node.right);
 	}
 	
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
 	public void binaryTreeDraw() {
 		draw(root);
 		
