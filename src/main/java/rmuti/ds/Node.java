@@ -2,7 +2,7 @@ package rmuti.ds;
 
 public class Node {
 	private Object element;
-	Node left, right;
+	private Node left, right;
 
 	public Node(Object e, Node l, Node r) {
 		element = e;
@@ -12,6 +12,14 @@ public class Node {
 	
 	public Object getValue() {
 		return element;
+	}
+	
+	public Node getLeft() {
+		return left;
+	}
+	
+	public Node getRight() {
+		return right;
 	}
 
 	@Override

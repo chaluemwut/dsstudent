@@ -1,4 +1,11 @@
-rmuti/ds/TestTree.class
 rmuti/ds/TreeDraw.class
-rmuti/ds/TestTree$DataStack.class
+rmuti/ds/BinaryTree.class
+rmuti/ds/Visitor.class
+rmuti/ds/App$1.class
+rmuti/ds/dynamicarray/ArrayListQueue.class
+rmuti/ds/dynamicarray/ArrayList.class
+rmuti/ds/TestTree.class
+rmuti/ds/TreeTraversal.class
+rmuti/ds/dynamicarray/ArrayListStack.class
+rmuti/ds/App.class
 rmuti/ds/Node.class
