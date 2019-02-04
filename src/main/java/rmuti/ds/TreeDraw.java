@@ -1,12 +1,8 @@
 package rmuti.ds;
 
-import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Paint;
 
 import javax.swing.JFrame;
-
-import org.apache.commons.collections15.Transformer;
 
 import edu.uci.ics.jung.algorithms.layout.Layout;
 import edu.uci.ics.jung.algorithms.layout.TreeLayout;
@@ -36,18 +32,18 @@ public class TreeDraw {
 	}
 
 	private void draw(Node node) {
-//		if (node == null) {
-//			return;
-//		}
-//
-//		if (node.left != null) {
-//			addNode(node, node.left);
-//		}
-//		if (node.right != null) {
-//			addNode(node, node.right);
-//		}
-//		draw(node.left);
-//		draw(node.right);
+		if (node == null) {
+			return;
+		}
+
+		if (node.getLeft() != null) {
+			addNode(node, node.getLeft());
+		}
+		if (node.getRight() != null) {
+			addNode(node, node.getRight());
+		}
+		draw(node.getLeft());
+		draw(node.getRight());
 	}
 
 	public int getWidth() {
