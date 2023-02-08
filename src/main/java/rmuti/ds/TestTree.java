@@ -23,6 +23,7 @@ public class TestTree {
 	int counter = 0;
 	DelegateTree<Node, String> tree = new DelegateTree<>(new DirectedOrderedSparseMultigraph());
 	Node root = null;
+
 	
 	public TestTree(Node root) {
 		tree.setRoot(root);
